@@ -1,0 +1,2 @@
+/run local b,m,f,u=_G["conjure"],math.min,math.floor,UnitLevel;t=u("target");l=(IsAltKeyDown() or t==0) and u("player") or t;b:SetAttribute("spell",GSNBR("Conjure Water",m(9,f((l-5)*0.1+f(l*(1/60))+2+(IsShiftKeyDown() and 1 or 0)))));
+/click conjure

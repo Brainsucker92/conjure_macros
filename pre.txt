@@ -1,0 +1,1 @@
+/run local b=_G["conjure"]or CreateFrame("Button","conjure",UIParent,"SecureActionButtonTemplate");b:SetAttribute("type", "spell");function GSNBR(spell, rank) return string.format("%s(Rank %i)",spell,rank) end

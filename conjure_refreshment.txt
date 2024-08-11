@@ -1,0 +1,2 @@
+/run local b,l=_G["conjure"],UnitLevel("target");b:SetAttribute("spell",GSNBR("Conjure Refreshment",l>0 and l<80 and 1 or 2));
+/click conjure
