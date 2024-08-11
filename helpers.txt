@@ -1,0 +1,1 @@
+/run function GHSR(s) for i=1,99 do if not GetSpellInfo(GSNBR(s,i)) then return i-1 end end end;function GSNBR(spell, rank) return string.format("%s(Rank %i)",spell,rank) end

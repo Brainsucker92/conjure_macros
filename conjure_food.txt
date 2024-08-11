@@ -1,2 +1,2 @@
-/run local b,m,u=_G["conjure"],math.min,UnitLevel;local t=u("target");local l=(IsAltKeyDown() or t==0) and u("player") or t;b:SetAttribute("spell",GSNBR("Conjure Food",m(8,math.floor((l-5)*0.1+2+(IsShiftKeyDown() and 1 or 0)))));
+/run local b,m,u,sn=_G["conjure"],math.min,UnitLevel,"Conjure Food";local t=u("target");local l=(IsAltKeyDown()or t==0) and u("player")or t;SBA("spell",GSNBR(sn,m(GHSR(sn),m(8,math.floor((l-5)*0.1+2+(IsShiftKeyDown()and 1 or 0))))));
 /click conjure
