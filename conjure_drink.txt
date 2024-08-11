@@ -1,2 +1,2 @@
-/run local b,m,f,u,sn=_G["conjure"],math.min,math.floor,UnitLevel,"Conjure Water";t=u("target");l=(IsAltKeyDown()or t==0)and u("player")or t;SBA("spell",GSNBR(sn,m(GHSR(sn),m(9,f((l-5)*0.1+f(l*(1/60))+2+(IsShiftKeyDown()and 1 or 0))))));
+/run local b,m,f,u,s=_G["conjure"],math.min,math.floor,UnitLevel,"Conjure Water";t=u("target");l=(IsAltKeyDown()or t==0)and u("player")or t;SBA("spell",GSNBR(s,m(GHSR(s),f((l-5)*0.1+f(l*(1/60))+2+(IsShiftKeyDown()and 1 or 0)))))
 /click conjure
