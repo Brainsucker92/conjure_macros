@@ -13,5 +13,6 @@ This guide explains how to use the conjure spells scripts provided in this repos
 ## Usage Instructions
 
 1. Copy the contents of each script into a new macro in your World of Warcraft Macro interface. To do this, open the game's Interface > Macros panel, click "Create Macro", give it a name (e.g., "Conjure Water"), and paste the contents of `conjure_drink.txt` into the macro body. Repeat this step for each script.
-2. *IMPORTANT: MAKE SURE TO ALWAYS CLICK THE MACROS INSIDE `helpers.txt` AND `init.txt` PRIOR TO USING ANY OF THE CONJURE MACROS. THIS STEP IS REQUIRED AFTER EVERY LOGIN.*
+2. **IMPORTANT: MAKE SURE TO ALWAYS CLICK THE MACROS INSIDE `helpers.txt` AND `init.txt` PRIOR TO USING ANY OF THE CONJURE MACROS. THIS STEP IS REQUIRED AFTER EVERY LOGIN.**
 3. When you use a macro in-game, it will cast the corresponding Conjure spell on your target or player based on certain conditions. For example, if you use the "Conjure Water" macro while holding down the Alt key and without having a target, it will cast the spell on yourself at its highest possible rank.
+   **IMPORTANT: These macros do not work during combat.**
