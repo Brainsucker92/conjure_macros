@@ -2,17 +2,49 @@
 
 This guide explains how to use the conjure spells scripts provided in this repository. These scripts are written in Lua and are designed to be used with World of Warcraft's macro system.
 
+## Key Features and Advantages
+
+These macros offer significant improvements over traditional spellcasting methods:
+
+1. **Dynamic Rank Calculation**  
+   Automatically selects the optimal spell rank based on your character level, ensuring you always use the most powerful available version of the spell.
+
+2. **Smart Targeting**  
+   - Casts on your target if selected  
+   - Falls back to self-casting if no target is present  
+
+3. **Modifier Key Customization**  
+   - **Alt** key: Forces self-casting even with a target selected  
+   - **Shift** key: Increases spell potency by 1 rank (where applicable)  
+   - Enables fine-grained control over spell effects
+
+4. **Secure Action Button**  
+   Uses WoW's secure action button framework for proper UI integration and compatibility with game mechanics.
+
 ## Files Description
 
-- `conjure_drink.txt`: Contains a script for the Conjure Water spell. This script calculates the rank of the spell based on your character level, whether you hold down specific modifier keys (Alt and Shift), and whether you have a target or not. If no target is specified, it will cast the spell on yourself.
-- `conjure_food.txt`: Contains a script for the Conjure Food spell. Similarly to `conjure_drink.txt`, this script calculates the rank of the spell based on your character level and whether you hold down specific modifier keys (Alt and Shift). It will cast the spell on your target if one is specified, or on yourself if no target is specified.
-- `conjure_refreshment.txt`: Contains a script for the Conjure Refreshment spell. This spell has two ranks depending on your character level (1 for levels 1-74 and 2 for levels 80+).
-- `helpers.txt`: Contains helper functions used by the conjure scripts. The `GHSR` function is used to determine the highest rank of a given spell that your character can cast. The `GSNBR` function is used to generate the full name of a spell with its rank.
-- `init.txt`: Initializes a secure action button that is used by the conjure scripts. This button is created if it doesn't exist already and is then configured to cast spells.
+- `conjure_drink.txt`:  
+  Conjure Water spell with dynamic rank calculation based on level, modifiers, and targeting state.
+
+- `conjure_food.txt`:  
+  Conjure Food spell with similar dynamic behavior and modifier-based adjustments.
+
+- `conjure_refreshment.txt`:  
+  Conjure Refreshment spell with automatic rank selection (Rank 1 for levels 1-79, Rank 2 for level 80+).
+
+- `helpers.txt`:  
+  **Mandatory dependency** for all macros. Contains reusable functions for spell rank detection and formatting.
+
+- `init.txt`:  
+  **Mandatory dependency** for all macros. Sets up a secure action button framework used by all macros.
 
 ## Usage Instructions
 
-1. Copy the contents of each script into a new macro in your World of Warcraft Macro interface. To do this, open the game's Interface > Macros panel, click "Create Macro", give it a name (e.g., "Conjure Water"), and paste the contents of `conjure_drink.txt` into the macro body. Repeat this step for each script.
-2. **IMPORTANT: MAKE SURE TO ALWAYS CLICK THE MACROS INSIDE `helpers.txt` AND `init.txt` PRIOR TO USING ANY OF THE CONJURE MACROS. THIS STEP IS REQUIRED AFTER EVERY LOGIN.**
-3. When you use a macro in-game, it will cast the corresponding Conjure spell on your target or player based on certain conditions. For example, if you use the "Conjure Water" macro while holding down the Alt key and without having a target, it will cast the spell on yourself at its highest possible rank.
-   **IMPORTANT: These macros do not work during combat.**
+1. **First**, create macros in-game for `helpers.txt` and `init.txt` — these are required for any conjure macro to function.
+2. Then, create macros for each conjure spell (`conjure_drink.txt`, `conjure_food.txt`, `conjure_refreshment.txt`).
+3. Use the macros **outside of combat** with the following controls:
+   - Left-click: Cast on target (or self if no target)
+   - Hold Alt: Force self-casting
+   - Hold Shift: Increase spell potency by 1 rank (where applicable)
+
+> **Important Note:** These macros are **not compatible with combat scenarios** and will not function while in combat. They are designed for use in safe zones, auction houses, or other non-combat situations.
