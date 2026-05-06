@@ -57,5 +57,6 @@ If you find these macros helpful, please consider donating to support continued 
 
 [**bitcoin**](bitcoin:BC1QUT9WDUGUNSHYWDQF7DXMF73AR2EAFSR2HWSPEJ?label=WoW%20Conjure%20Macros&message=Thank%20you%20so%20much%20for%20your%20contribution%21): bc1qut9wdugunshywdqf7dxmf73ar2eafsr2hwspej
 
-All donations are appreciated and help keep these tools free for the community!
+**gridcoin**: S8WuRCq8xem6WPoQ6wjFEeLwQWiWBqei2s
 
+All donations are appreciated and help keep these tools free for the community!
