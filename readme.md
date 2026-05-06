@@ -48,3 +48,14 @@ These macros offer significant improvements over traditional spellcasting method
    - Hold Shift: Increase spell potency by 1 rank (where applicable)
 
 > **Important Note:** These macros are **not compatible with combat scenarios** and will not function while in combat. They are designed for use in safe zones, auction houses, or other non-combat situations.
+
+## How to Contribute
+
+If you find these macros helpful, please consider donating to support continued development and maintenance:
+
+### Crypto
+
+[**bitcoin**](bitcoin:BC1QUT9WDUGUNSHYWDQF7DXMF73AR2EAFSR2HWSPEJ?label=WoW%20Conjure%20Macros&message=Thank%20you%20so%20much%20for%20your%20contribution%21): bc1qut9wdugunshywdqf7dxmf73ar2eafsr2hwspej
+
+All donations are appreciated and help keep these tools free for the community!
+
